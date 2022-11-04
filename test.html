@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdn.bootcdn.net/ajax/libs/xlsx/0.18.5/xlsx.core.min.js"></script> -->
+  </head>
+  <script type="text/javascript">
+    function draw() {
+      var canvas = document.getElementById('canvas')
+      console.log(canvas)
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d')
+        ctx.fillStyle = 'rgb(200,0,0)'
+        ctx.fillRect(10, 10, 55, 50)
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)'
+        ctx.fillRect(30, 30, 55, 50)
+      }
+    }
+  </script>
+  <body onload="draw()">
+    <canvas id="canvas"></canvas>
+    <style></style>
+    <!-- <div id="tttt">export</div>
+    <script>
+      let a = [
+        {
+          id: 82239,
+          paymentTime: 1664176121,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 24,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61213
+        },
+        {
+          id: 82238,
+          paymentTime: 1664175965,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 59,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61212
+        },
+        {
+          id: 82237,
+          paymentTime: 1664175918,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 24,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61211
+        },
+        {
+          id: 82236,
+          paymentTime: 1664175837,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 24,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61210
+        },
+        {
+          id: 82235,
+          paymentTime: 1664175752,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 24,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61209
+        },
+        {
+          id: 82234,
+          paymentTime: 1664175488,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 55,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61208
+        },
+        {
+          id: 82233,
+          paymentTime: 1664175484,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 55,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61207
+        },
+        {
+          id: 82232,
+          paymentTime: 1664175387,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 49,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61206
+        },
+        {
+          id: 82231,
+          paymentTime: 1664175196,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 49,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61205
+        },
+        {
+          id: 82230,
+          paymentTime: 1664175145,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 49,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61204
+        },
+        {
+          id: 82215,
+          paymentTime: 1664160965,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 35,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61177
+        },
+        {
+          id: 82194,
+          paymentTime: 1664156319,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 49,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61154
+        },
+        {
+          id: 82154,
+          paymentTime: 1663899296,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 72,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61111
+        },
+        {
+          id: 82104,
+          paymentTime: 1663830776,
+          type: 0,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 34,
+          accountId: 61,
+          receiveAccountId: 131,
+          tradeinfoId: 61062
+        },
+        {
+          id: 82071,
+          paymentTime: 1663573322,
+          type: 2,
+          paymentType: 9,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 65.2,
+          accountId: 231,
+          receiveAccountId: 61,
+          tradeinfoId: 60961
+        },
+        {
+          id: 2451,
+          paymentTime: 1653129911,
+          type: 0,
+          paymentType: 0,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 0,
+          accountId: 61,
+          receiveAccountId: null,
+          tradeinfoId: null
+        },
+        {
+          id: 2461,
+          paymentTime: 1653129911,
+          type: 0,
+          paymentType: 1,
+          memo: null,
+          sysCurrencyId: 2,
+          money: 1000,
+          accountId: 61,
+          receiveAccountId: null,
+          tradeinfoId: null
+        },
+        {
+          id: 2431,
+          paymentTime: 1653129801,
+          type: 0,
+          paymentType: 0,
+          memo: null,
+          sysCurrencyId: 3,
+          money: 0,
+          accountId: 61,
+          receiveAccountId: null,
+          tradeinfoId: null
+        },
+        {
+          id: 2441,
+          paymentTime: 1653129801,
+          type: 0,
+          paymentType: 1,
+          memo: null,
+          sysCurrencyId: 3,
+          money: 1000,
+          accountId: 61,
+          receiveAccountId: null,
+          tradeinfoId: null
+        },
+        {
+          id: 651,
+          paymentTime: 1647311152,
+          type: 1,
+          paymentType: 2,
+          memo: null,
+          sysCurrencyId: null,
+          money: 0.01,
+          accountId: 61,
+          receiveAccountId: null,
+          tradeinfoId: null
+        }
+      ]
+      const xlsx = window.XLSX
+      function handleXlsx(array) {
+        // const wb = xlsx.utils.book_new()
+        // const sheet1Name = xlsxArr[0]
+        // const sheet1 = xlsx.utils.aoa_to_sheet(array.shift())
+        // xlsx.utils.book_append_sheet(wb, sheet1, sheet1Name)
+        // array.filter((item, index) => {
+        //   const sheetName = xlsxArr[index + 1]
+        //   const sheet = xlsx.utils.json_to_sheet(item)
+        //   xlsx.utils.book_append_sheet(wb, sheet, sheetName)
+        // })
+        // if (preData.length !== 0) {
+        //   console.log(preData)
+        //   const sheet = xlsx.utils.json_to_sheet(preData)
+        //   xlsx.utils.book_append_sheet(wb, sheet, title[0])
+        // }
+        // const blob = this.workbook2blob(wb)
+        // const sheet = xlsx.utils.aoa_to_sheet(array)
+        const tesA = [
+          { 姓名: 'su', nn: 'ss' },
+          { 姓名: 's7', nn: 'ss' }
+        ]
+
+        const sheet2 = xlsx.utils.json_to_sheet(a)
+        const wb = xlsx.utils.book_new()
+        // xlsx.utils.book_append_sheet(wb, sheet)
+        xlsx.utils.book_append_sheet(wb, sheet2)
+        const blob = this.workbook2blob(wb)
+        // console.log(blob)
+        // console.log(Object.keys(a[0]), a, tesA)
+        this.openDownloadDialog(blob, '导出.xlsx')
+      }
+      // 将workbook to blob
+      const div = document.querySelector('#tttt')
+      div.addEventListener('click', () => {
+        handleXlsx()
+      })
+      function workbook2blob(workbook) {
+        // 生成excel的配置项
+        var wopts = {
+          // 要生成的文件类型
+          bookType: 'xlsx',
+          // // 是否生成Shared String Table，官方解释是，如果开启生成速度会下降，但在低版本IOS设备上有更好的兼容性
+          bookSST: false,
+          type: 'binary'
+        }
+        var wbout = xlsx.write(workbook, wopts)
+        // 将字符串转ArrayBuffer
+        function s2ab(s) {
+          var buf = new ArrayBuffer(s.length)
+          var view = new Uint8Array(buf)
+          for (var i = 0; i != s.length; ++i) view[i] = s.charCodeAt(i) & 0xff
+          return buf
+        }
+        var blob = new Blob([s2ab(wbout)], {
+          type: 'application/octet-stream'
+        })
+        return blob
+      }
+      function openDownloadDialog(url, saveName) {
+        if (typeof url == 'object' && url instanceof Blob) {
+          url = URL.createObjectURL(url) // 创建blob地址
+        }
+        var aLink = document.createElement('a')
+        aLink.href = url
+        aLink.download = saveName || '' // HTML5新增的属性，指定保存文件名，可以不要后缀，注意，file:///模式下不会生效
+        var event
+        if (window.MouseEvent) event = new MouseEvent('click')
+        else {
+          event = document.createEvent('MouseEvents')
+          event.initMouseEvent(
+            'click',
+            true,
+            false,
+            window,
+            0,
+            0,
+            0,
+            0,
+            0,
+            false,
+            false,
+            false,
+            false,
+            0,
+            null
+          )
+        }
+        aLink.dispatchEvent(event)
+      }
+    </script> -->
+  </body>
+</html>
